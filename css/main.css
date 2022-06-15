@@ -1,16 +1,32 @@
+:root {
+    --main-bg-color: red;
+    --target-color: blue;
+
+}
+
+
+
 .box {
     width: 200px;
     height: 200px;
-    background-color: red;
-
-    transition: all 1s ease;
-    transition-delay: 2s;
+    background-color: var(--main-bg-color);
+    animation-name: colorswap;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
-.box:hover {
-    background-color: blue;
-    width: 400px;
-    height: 50px;
+.box2 {
+    animation-duration: 1s;
+}
 
-   /* transform: rotate(40deg); */
+.box3 {
+    animation-duration: 5s;
+}
+
+@keyframes colorswap {
+    from {background-color: var(--main-bg-color);
+    width: 200px;}
+    to {background-color: var(--target-color);
+    width: 400px;}
 }
