@@ -12,7 +12,7 @@
     background-image: url('../images/Artboard\ 1.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    animation: logoanim 2s steps (7,end) infinite;
+    animation: logoanim 2s steps(7,end) infinite;
 }
 
 
