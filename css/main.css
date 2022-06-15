@@ -4,6 +4,16 @@
 
 }
 
+.sprites {
+    width: 414px;
+    height: 218px;
+
+    border: thin dashed black;
+    background-image: url('../images/Artboard\ 1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: logoanim 2s steps (7,end) infinite;
+}
 
 
 .box {
@@ -29,4 +39,11 @@
     width: 200px;}
     to {background-color: var(--target-color);
     width: 400px;}
+}
+
+
+@keyframes logoanim {
+    from {background-position: 0; }
+    to { background-position: 0 -1670px;}
+
 }
